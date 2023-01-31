@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 100%;
+  margin: 3rem 0.5rem 5rem 1.5rem;
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    gap: 5px;
+
+    .title,
+    .details {
+      padding: 0.5rem 2rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+      overflow: hidden;
+      outline: none;
+      color: rgba(240, 227, 202, 0.64);
+      background: #242320;
+      border: 1px solid #ff8303;
+      border-radius: 4px;
+    }
+
+    .edit-details {
+      min-height: 5rem;
+      max-width: calc(100% - 4rem);
+      height: 3rem;
+      height: max;
+      padding: 0.5rem 2rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+      outline: none;
+      color: rgba(240, 227, 202, 0.64);
+      background: #242320;
+      border: 1px solid #ff8303;
+      border-radius: 4px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  button {
+    margin: 0 1rem;
+    height: 100%;
+    width: 70px;
+    height: 70px;
+    background: #242320;
+    border: 2px solid #ff8303;
+    border-radius: 8px;
+    color: #ff8303;
+    font-size: 3rem;
+    cursor: pointer;
+    &:hover {
+      background: #191916;
+    }
+  }
+  .update-btn {
+    font-size: medium;
+  }
+
+  @media screen and (max-width: 900px) {
+    .inputs {
+      width: 270px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    margin-bottom: 1rem;
+  }
+}

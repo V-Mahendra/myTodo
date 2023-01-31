@@ -1,0 +1,109 @@
+.tasks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 90%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  height: 23rem;
+  background: #242320;
+  border: 2px solid #a35709;
+  border-radius: 8px;
+  padding: 3rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-task {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    line-height: 5px;
+    letter-spacing: 2px;
+    span {
+      width: 70px;
+      background-color: #ff8303;
+      height: 0px;
+      border-radius: 3px;
+      border: 2px solid #ff8303;
+    }
+  }
+
+  .task {
+    box-sizing: border-box;
+    width: 23rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 16px;
+    background: #242320;
+    border: 2px solid #a35709;
+    border-radius: 8px;
+
+    .texts {
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 85%;
+      input {
+        color: rgba(247, 240, 225, 0.64);
+        font-size: 1.1rem;
+        font-weight: 500;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+      .details {
+        font-size: 0.8rem;
+        width: 100%;
+      }
+    }
+
+    .buttons {
+      #dlt {
+        color: #ff8303;
+        &:hover {
+          color: #161514;
+        }
+      }
+    }
+
+    .btn-style {
+      margin-left: 10px;
+      background: #161514;
+      border-radius: 4px;
+      color: whitesmoke;
+      padding: 5px 10px;
+      border: 2px solid #a35709;
+      font-weight: bold;
+      &:hover {
+        background: #ff8303;
+      }
+    }
+
+    .btnmode {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .tasks {
+    width: 100%;
+    margin-top: 2rem;
+    border: none;
+    background-color: transparent;
+    gap: 1.5rem 0;
+    height: 600px;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: start;
+  }
+}
